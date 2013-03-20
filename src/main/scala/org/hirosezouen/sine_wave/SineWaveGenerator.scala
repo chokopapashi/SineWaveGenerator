@@ -25,7 +25,8 @@ object SineWaveGenerator extends SimpleSwingApplication {
 
         contents = new Panel {
             override def contents: Buffer[Component] = Buffer.empty
-            override def paint(g: Graphics2D) {
+            override def paint(g: Graphics2D) = super.paint(g)
+            override protected def paintComponent(g: Graphics2D) {
                 super.paint(g)
                 g.setColor(Color.GREEN)
                 g.fillOval(0,0,size.width*2,size.height*2)
