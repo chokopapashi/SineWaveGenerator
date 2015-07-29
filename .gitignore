@@ -4,6 +4,7 @@
 *.swn
 
 *.lnk
+*.bat
 logback.xml
 
 #original -->
