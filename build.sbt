@@ -6,6 +6,8 @@ organization := "org.hirosezouen"
 
 scalaVersion := "2.10.1"
 
+//resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+
 // Actor of Ver2.10.1 requires to add libraryDependencies explicitly
 //libraryDependencies <+= scalaVersion { "org.scala-lang" % "scala-actors" % _ }
 
@@ -15,6 +17,8 @@ scalaVersion := "2.10.1"
 libraryDependencies <+= scalaVersion { "org.scala-lang" % "scala-swing" % _ }
 
 //libraryDependencies += "org.scalatest" % "scalatest_2.10" % "1.9.1" % "test"
+
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.2-M1"
 
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.9"
 
