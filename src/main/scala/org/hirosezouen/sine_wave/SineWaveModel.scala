@@ -8,13 +8,12 @@
 
 package org.hirosezouen.sine_wave
 
-
 //import javax.sound.sampled._
 
 import org.hirosezouen.hzutil._
 import org.hirosezouen.hzutil.HZLog._
 
-object SinWave {
+case class SinWaveModel() {
     implicit val logger = getLogger(this.getClass.getName)
 
     def main(args: Array[String]) {
