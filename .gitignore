@@ -10,6 +10,7 @@ logback.xml
 
 *.class
 *.log
+*.sh
 
 # sbt specific
 dist/*
