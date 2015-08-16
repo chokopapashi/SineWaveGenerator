@@ -14,7 +14,7 @@ package org.hirosezouen.sine_wave
 import org.hirosezouen.hzutil._
 import org.hirosezouen.hzutil.HZLog._
 
-object SinWave {
+case class SineWaveModel() {
     implicit val logger = getLogger(this.getClass.getName)
 
     def main(args: Array[String]) {
